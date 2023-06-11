@@ -8,26 +8,24 @@ namespace ZelandClimate
 {
     internal class Lokale
     {
-        public int id;
+        static private int nextId;
         public string lokaleNummer;
         public int maxAntal;
         
-        // constructors
-
-        public Lokale(int id, string lokaleNummer, int maxAntal)
-        {
-
-            ID = id;
-            LokaleNummer = lokaleNummer;
-            MaxAntal = maxAntal;
-
-
-        }
 
         public int ID { get; set; }
         public string LokaleNummer { get; set; }
         public int MaxAntal { get; set; }
 
+        // constructors
+        public Lokale(string lokaleNummer, int maxAntal)
+        {
+
+            ID = Interlocked.Increment(ref nextId);
+            LokaleNummer = lokaleNummer;
+            MaxAntal = maxAntal;
+
+        }
 
 
         public override string ToString()
