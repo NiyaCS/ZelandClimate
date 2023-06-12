@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZelandClimate
 {
-    internal class Lokale
+    public class Lokale
     {
         static private int nextId;
         public string lokaleNummer;

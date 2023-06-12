@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZelandClimate
 {
-    internal class Måling
+    public class Måling
     {
         //properties
         static private int nextId;
