@@ -26,14 +26,14 @@ namespace ZelandClimate
         public Lokale Lokale { get; set; }
 
         //constructors
-        public Måling(DateTime dateTime, double temp, int co2, int antalPersoner, Lokale Lokale)
+        public Måling(DateTime dateTime, double temp, int co2, int antalPersoner, Lokale lokale)
         {
             ID = Interlocked.Increment(ref nextId);
-            DateTime = this.dateTime;
-            Temp = this.temp;
-            Co2 = this.co2;
-            AntalPersoner = this.antalPersoner;
-            Lokale = this.Lokale;
+            DateTime = dateTime;
+            Temp = temp;
+            Co2 = co2;
+            AntalPersoner = antalPersoner;
+            Lokale = lokale;
         }
 
         // to string method
