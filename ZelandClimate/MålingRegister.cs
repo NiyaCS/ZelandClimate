@@ -13,11 +13,27 @@ namespace ZelandClimate
         public MålingRegister()
         {
 
-            Målinger = new List<Måling>(); 
+            Målinger = new List<Måling>();
 
         }
+        public void TilføjMåling(Måling måling)
+        {
+            //tilføj kode der indsætter en måling i målinger
+        }
+        public void SletMåling(Måling måling)
+        {
+            //tilføj kode der sletter en måling i målinger
+        }
 
+        public PrintAlleMålinger(//skal nok ikke have input, da ´vi i samme klasse)
+        {
+            //tilføj kode der printer alle målinger i registeret
+        }
 
+        public HentMåling()
+        {
+            //tilføj kode der henter en enkelt måling i registeret
+        }
     }
 
 }
