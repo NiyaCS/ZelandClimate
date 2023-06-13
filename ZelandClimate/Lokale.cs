@@ -17,7 +17,7 @@ namespace ZelandClimate
         public string LokaleNummer { get; set; }
         public int MaxAntal { get; set; }
 
-        // constructors
+        // constructors (bygger)
         public Lokale(string lokaleNummer, int maxAntal)
         {
 

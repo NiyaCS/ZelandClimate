@@ -19,7 +19,12 @@
             // (Afprøver klassen Måling igen i main metode opgave), opretter nyt måling project 
             Måling målinglokale1 = new Måling(DateTime.Now, 25.5, 100, 25, lokale1);
 
+            // generate målinger
+            MålingRegister målingRegister = new MålingRegister();
+
+
             // udskriver målingens properties.
+            Console.WriteLine("Målinger: " + målingRegister);
 
             Console.WriteLine("Målinglokale1:");
             Console.WriteLine("ID: " + målinglokale1.ID);
@@ -27,7 +32,8 @@
             Console.WriteLine("Temp: " + målinglokale1.Temp);
             Console.WriteLine("CO2" + målinglokale1.Co2);
             Console.WriteLine("Antal personer: " + målinglokale1.AntalPersoner);
-            Console.WriteLine("Lokale målingen blev lavet: " + målinglokale1.lokaleId);
+            Console.WriteLine("Lokale målingen blev lavet: " + målinglokale1.Lokale.ID);
+
 
 
             
