@@ -9,8 +9,8 @@
             //generate lokale
             Lokale lokale1 = new Lokale("D 3. 06", 30);
             Lokale lokale2 = new Lokale("D 3. 07", 28);
-            
-            
+            Lokale lokale3 = new Lokale("D 3. 08", 35);
+
 
             // (Afprøver klassen Måling i main metode opgave), opretter nyt måling project 
             // Måling måling1 = new Måling(DateTime.Now, 25.5, 100, 25);
@@ -28,9 +28,14 @@
             målingRegister1.TilføjMåling(måling1);
             målingRegister1.TilføjMåling(måling2);
 
+            //Opret måling til målingregister
+            målingRegister1.OpretMåling(DateTime.Now, 25.5, 100, 25, lokale3);
+
             //Print alle målinger
 
+            
             målingRegister1.PrintAlleMålinger();
+            Console.WriteLine(målingRegister1.HentMålingFancy(4));
             
 
             //// udskriver målingens properties.
