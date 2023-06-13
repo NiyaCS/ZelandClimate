@@ -17,22 +17,32 @@
             // Måling måling2 = new Måling(DateTime.Now, 23.4, 90, 30);
 
             // (Afprøver klassen Måling igen i main metode opgave), opretter nyt måling project 
-            Måling målinglokale1 = new Måling(DateTime.Now, 25.5, 100, 25, lokale1);
+            Måling måling1 = new Måling(DateTime.Now, 25.5, 100, 25, lokale1);
+            Måling måling2 = new Måling(DateTime.Now, 25.5, 100, 25, lokale2);
 
             // generate målinger
-            MålingRegister målingRegister = new MålingRegister();
+            MålingRegister målingRegister1 = new MålingRegister();
 
+            //Tilføj måling til målingregister
 
-            // udskriver målingens properties.
-            Console.WriteLine("Målinger: " + målingRegister);
+            målingRegister1.TilføjMåling(måling1);
+            målingRegister1.TilføjMåling(måling2);
 
-            Console.WriteLine("Målinglokale1:");
-            Console.WriteLine("ID: " + målinglokale1.ID);
-            Console.WriteLine("DateTime: " + målinglokale1.DateTime);
-            Console.WriteLine("Temp: " + målinglokale1.Temp);
-            Console.WriteLine("CO2" + målinglokale1.Co2);
-            Console.WriteLine("Antal personer: " + målinglokale1.AntalPersoner);
-            Console.WriteLine("Lokale målingen blev lavet: " + målinglokale1.Lokale.ID);
+            //Print alle målinger
+
+            målingRegister1.PrintAlleMålinger();
+            
+
+            //// udskriver målingens properties.
+            //Console.WriteLine("Målinger: " + målingRegister);
+
+            //Console.WriteLine("Målinglokale1:");
+            //Console.WriteLine("ID: " + målinglokale1.ID);
+            //Console.WriteLine("DateTime: " + målinglokale1.DateTime);
+            //Console.WriteLine("Temp: " + målinglokale1.Temp);
+            //Console.WriteLine("CO2" + målinglokale1.Co2);
+            //Console.WriteLine("Antal personer: " + målinglokale1.AntalPersoner);
+            //Console.WriteLine("Lokale målingen blev lavet: " + målinglokale1.Lokale.ID);
 
 
 

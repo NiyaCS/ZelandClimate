@@ -6,11 +6,6 @@ using System.Threading.Tasks;
 
 namespace ZelandClimate
 {
-<<<<<<< HEAD
-    internal class MålingRegister
-    {
-    }
-=======
     public class MålingRegister
     {
         public List<Måling> Målinger { get; set; }
@@ -20,47 +15,45 @@ namespace ZelandClimate
        
             Målinger = new List<Måling>();
         }
+
         public void TilføjMåling(Måling måling)
         {
             //tilføj kode der indsætter en måling i målinger
 
 
-           // Målinger.Add(new Måling(1, 2));
-           // Målinger.Add(new Måling(3, 4));
+            Målinger.Add(måling);
 
-            //Eller:
-            Måling.Add(Målinger);
-            Måling.Add();
-           //Kan man gøre, hvis man har get setters + to string:
-           måling.Add(new Måling() { Måling1 = "123", MålingId = 1234 });
-            
-
-        }
-        public void SletMåling(Måling måling)
-        {
-            //tilføj kode der sletter en måling i målinger
-
-            Måling.Remove(Målinger)
-           
-
+        //eller:
+            //måling.add(målinger);
+            //måling.add();
         }
 
-        public PrintAlleMålinger()//skal nok ikke have input, da ´vi i samme klasse)
+
+        //public void SletMåling(Måling måling)
+        //{
+        //    //tilføj kode der sletter en måling i målinger
+
+        //    // Måling.Remove(Målinger)
+        //}
+
+        
+        public void PrintAlleMålinger()//skal nok ikke have input, da vi er i samme klasse, skal ikke returnere noget, efter den er færdig med at køre)
         {
             //tilføj kode der printer alle målinger i registeret
+
             //Bruger en for loop
-            for(int i=0;i<months.Count;i++)
+            for (int i = 0; i < Målinger.Count; i++)
             {
-            Console.WriteLine(måling[i]);
+                Console.WriteLine(Målinger[i]);
             }
-
+            
         }
 
-        public HentMåling()
-        {
-            //tilføj kode der henter en enkelt måling i registeret
-            Måling.Find() 
+        //public HentMåling()
+        //{
+        //    //tilføj kode der henter en enkelt måling i registeret
+        //    // Måling.Find() 
 
-        }
+        //}
     }
 }
